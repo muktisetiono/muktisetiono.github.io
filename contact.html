@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/contact.css">
+    <title>Pocari Sweat</title>
+
+</head>
+
+<body>
+    <section class="sec">
+        <header>
+            <a href="index.html"><img src="./gambar/logo.png" class="logo"></a>
+            <div class="toggleMenu" onclick="menuToggle();"></div>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </header>
+
+
+        <div id="body-content">
+            <div class="container">
+                <div class="icon">
+                    <img src="https://www.aio.co.id/assets/images/contact/customer-service-icon.svg">
+                </div>
+                <div class="info">
+                    <div class="info-name">
+                        customer care
+                    </div>
+                    <div class="info-detail">
+                        <a href="#" target="_blank">0800-1-687852</a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="contact-row">
+                        <div class="icon">
+                            <img src="https://www.aio.co.id/assets/images/contact/office-icon.svg">
+                        </div>
+                        <div class="info">
+                            <div class="info-name">
+                                Kantor Pusat
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="address">
+                        <p>Pondok Indah Office Tower I 6th Floor.<br>Jl. Sultan Iskandar Muda
+                            Kav. V-TA
+                            <br>South Jakarta, DKI Jakarta 12310
+                        </p>
+                        <a class="contact-num" href="tel:0217697475" target="_blank"><i class="fas fa-phone-alt"></i>
+                            (021) - 7697475</a>
+                        <a class="contact-num" href="tel:0217697476" target="_blank"><i class="fas fa-phone-alt"></i>
+                            (021) - 7697476</a>
+                        <a class="contact-num" target="_blank" href="tel:0217697472"><i class="fas fa-fax"></i>
+                            (021) - 7697472</a>
+                    </div>
+                </div>
+
+                <div class="contact-info aos-init" data-aos="fade-down">
+                    <div class="contact-row">
+                        <div class="icon">
+                            <img src="https://www.aio.co.id/assets/images/contact/factory-icon.svg">
+                        </div>
+                        <div class="info">
+                            <div class="info-name">
+                                Pabrik Sukabumi
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="address">
+                        <p>Jl. Raya Siliwangi Km 28<br>Desa Kutajaya, Kecamatan Cicurug<br>Kab
+                            Sukabumi
+                            43359</p>
+                        <a class="contact-num" href="tel:0266733700" target="_blank"><i class="fas fa-phone-alt"></i>
+                            (0266) - 733700</a>
+                        <a class="contact-num" target="_blank" href="tel:0266733699"><i class="fas fa-fax"></i>
+                            (0266) - 733699</a>
+                    </div>
+                </div>
+
+                <div class="contact-info aos-init" data-aos="fade-down">
+                    <div class="contact-row">
+                        <div class="icon">
+                            <img src="https://www.aio.co.id/assets/images/contact/factory-icon.svg">
+                        </div>
+                        <div class="info">
+                            <div class="info-name">
+                                Pabrik Kejayan
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="address">
+                        <p>Jl. Raya Pasuruan - Malang Km 11<br>Desa Pacarkeling, Kecamatan
+                            Kejayan<br>Kab Pasuruan 67172</p>
+                        <a class="contact-num" href="tel:0343414200" target="_blank"><i class="fas fa-phone-alt"></i>
+                            (0343) - 414200</a>
+                        <a class="contact-num" target="_blank" href="tel:0343414201"><i class="fas fa-fax"></i>
+                            (0343) - 414201</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+        </div>
+
+
+
+    </section>
+    </div>
+
+
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.pocari').src = anything;
+        }
+        function chargerBgcolor(color) {
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+        function menuToggle() {
+            const toggleMenu = document.querySelector('.toggleMenu');
+            const navigation = document.querySelector('.navigation');
+            toggleMenu.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+</body>

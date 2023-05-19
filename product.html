@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/product.css">
+    <title>Pocari Sweat</title>
+
+</head>
+
+<body>
+    <section class="sec">
+        <header>
+            <a href="index.html"><img src="./gambar/logo.png" class="logo"></a>
+            <div class="toggleMenu" onclick="menuToggle();"></div>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2><span>POCARI SWEAT<br></span>
+                    THE ION SUPPLY DRINK<br></h2>
+            </div>
+            <div class="imgBox">
+                <img src="./gambar/pocari_sweat_product.png" class="pocari">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="./gambar/bottle.png"
+                    onclick="imgSlider('./gambar/pocari_sweat_product.png');chargerBgcolor('#0062be')"></li>
+            <li><img src="./gambar/bottle.png"
+                    onclick="imgSlider('./gambar/pocari_sweat_product.png');chargerBgcolor('#e60c2c')"></li>
+            <li><img src="./gambar/bottle.png"
+                    onclick="imgSlider('./gambar/pocari_sweat_product.png');chargerBgcolor('#1e1e1e')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a
+                    href="https://www.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjgzNTQxNjczLCJjYWxsc2l0ZV9pZCI6MjY5NTQ4NDUzMDcyMDk1MX0%3D"><img
+                        src="./gambar/facebook.png"></a></li>
+            <li><a href="https://twitter.com/explore"><img src="./gambar/twitter.png"></a></li>
+            <li><a href="https://www.instagram.com/?hl=id"><img src="./gambar/instagram.png"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.pocari').src = anything;
+        }
+        function chargerBgcolor(color) {
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+        function menuToggle() {
+            const toggleMenu = document.querySelector('.toggleMenu');
+            const navigation = document.querySelector('.navigation');
+            toggleMenu.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>

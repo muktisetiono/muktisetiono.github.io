@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Pocari Sweat</title>
+
+</head>
+
+<body>
+    <section class="sec">
+        <header>
+            <a href="index.html"><img src="./gambar/logo.png" class="logo"></a>
+            <div class="toggleMenu" onclick="menuToggle();"></div>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>POCARI SWEAT<br><span>I LIKE</span></h2>
+                <p align="justify">POCARI SWEAT merupakan minuman isotonic yang mengandung berbagai ion penting untuk
+                    menggantikan cairan yang hilang dalam tubuh. Minuman isotonic ini mengandung natrium, magnesium, dan
+                    klorida.</p>
+                <a href="product.html">view all products</a>
+            </div>
+            <div class="imgBox">
+                <img src="./gambar/png.png" class="pocari">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="./gambar/bottle.png" onclick="imgSlider('./gambar/png.png');chargerBgcolor('#0062be')"></li>
+            <li><img src="./gambar/bottle.png" onclick="imgSlider('./gambar/png.png');chargerBgcolor('#e60c2c')"></li>
+            <li><img src="./gambar/bottle.png" onclick="imgSlider('./gambar/png.png');chargerBgcolor('#1e1e1e')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="https://www.facebook.com/pocariID/?locale=id_ID"><img src="./gambar/facebook.png"></a></li>
+            <li><a href="https://twitter.com/pocariID?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img
+                        src="./gambar/twitter.png"></a></li>
+            <li><a href="https://www.instagram.com/pocariid/"><img src="./gambar/instagram.png"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.pocari').src = anything;
+        }
+        function chargerBgcolor(color) {
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+        function menuToggle() {
+            const toggleMenu = document.querySelector('.toggleMenu');
+            const navigation = document.querySelector('.navigation');
+            toggleMenu.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
